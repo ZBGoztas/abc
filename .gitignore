@@ -1,0 +1,7 @@
+Data/
+data/
+stepData/
+EX/
+.vscode/
+__pycache__/
+logs/
