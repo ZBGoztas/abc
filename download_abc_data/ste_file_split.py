@@ -5,8 +5,9 @@ from OCC.Core.STEPControl import STEPControl_Reader, STEPControl_Writer, STEPCon
 from OCC.Core.IFSelect import IFSelect_RetDone
 from OCC.Core.TopAbs import TopAbs_SOLID
 
-INPUT_DIR = Path(r"<local-path>")
-OUTPUT_DIR = Path(r"<local-path>")
+BASE_DIR = Path(__file__).resolve().parent.parent
+INPUT_DIR = BASE_DIR / "data" / "abc" / "raw" / "extracted"
+OUTPUT_DIR = BASE_DIR / "data" / "abc" / "raw" / "step_data"
 MAX_FILES = None
 HASH_LOG = OUTPUT_DIR / "processed_hashes.txt"
 

@@ -3,7 +3,7 @@ import py7zr
 import shutil
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-ARCHIVE_PATH = r"<local-path> abc_0001_step_v00.7z"
+ARCHIVE_PATH = BASE_DIR / "data" / "abc" / "raw" / "step" / "retrieve abc_0001_step_v00.7z"
 TEMP_EXTRACT_DIR = BASE_DIR / "data" / "abc" / "raw" / "extracted"
 OUTPUT_DIR = BASE_DIR / "data" / "abc" / "raw" / "stepfiles"
 
